@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Your Way to Prosperity</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <h1>Design Your Way to Prosperity Without Selling Your Time!</h1>
+            <p>Get free access to an ever growing library of strategies, guides, personal experiences and resources to start & grow your online business as a designer.</p>
+            <div class="email-signup">
+                <input type="email" placeholder="exemple: ['01','1']">
+                <button>Voir le resultat</button>
+            </div>
+        </header>
+        <section class="resources">
+            <h2>Resources</h2>
+            <div class="resource-cards">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='algo.png') }}" alt="Framer Money Masterclass">
+                    <h3>Sardina-Patterson</h3>
+                    <p></p>
+                </div>
+                <div class="card">
+                    <img src="{{ url_for('static', filename='image2_0.jpg') }}" alt="Framer Money Playbook">
+                    <h3>AI</h3>
+                    <p>Randomforest model</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
