@@ -9,25 +9,28 @@
 <body>
     <div class="container">
         <header class="hero">
-            <h1>Design Your Way to Prosperity Without Selling Your Time!</h1>
-            <p>Get free access to an ever growing library of strategies, guides, personal experiences and resources to start & grow your online business as a designer.</p>
-            <div class="email-signup">
-                <input type="email" placeholder="exemple: ['01','1']">
-                <button>Voir le resultat</button>
-            </div>
+            <h1>Sardina-Patterson vs Machine learning</h1>
+            <p>L'objectif est d'utiliser un modèle IA en utilisant un algorithme de machine learning qui pourra déterminer (prédire) si un langage donné est un code ou pas..</p>
+            <form class="prediction-form" action="{{url_for('prediction')}}" method="post">
+                <input type="prediction" name="prediction" placeholder="exemple: ['01','1']">
+                <button type="submit">Voir le resultat</button>
+            </form>
         </header>
         <section class="resources">
-            <h2>Resources</h2>
+            <h2>Avec:</h2>
             <div class="resource-cards">
                 <div class="card">
                     <img src="{{ url_for('static', filename='algo.png') }}" alt="Framer Money Masterclass">
                     <h3>Sardina-Patterson</h3>
-                    <p></p>
+                    <p>algorithme Sardina-Patterson</p>
+                    <p style="{{sardinarespstyle}}"> {{labelStylesardinaresp}} </p>
                 </div>
                 <div class="card">
                     <img src="{{ url_for('static', filename='image2_0.jpg') }}" alt="Framer Money Playbook">
-                    <h3>AI</h3>
-                    <p>Randomforest model</p>
+                    <h3>Machine learning</h3>
+                    <p>Random forest model</p>
+                    <p style="{{predictionstyle}}"> {{labelStyleprediction}} </p>
+                                                    
                 </div>
             </div>
         </section>
