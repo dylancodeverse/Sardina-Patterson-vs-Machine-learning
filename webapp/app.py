@@ -14,8 +14,7 @@ def prediction():
     style ={True:'color:lime;',False:'color:#ff3d3d'}
     label={True:"C'est un code",False:"Ce n'est pas un code"}
     topredictVar= request.form.get("prediction")
-    print(topredictVar)
-    topredictVal = ast.literal_eval(topredictVar)
+    topredictVal = topredictVar.strip().split(" ")
     predicted = Language.Language(None,topredictVal).predict()[0] == 1
     sardinaPrediction = sardina.SardinasPaterson.estCeUnCode(topredictVal)
     return render_template('index.html',
